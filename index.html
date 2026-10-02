@@ -3,9 +3,75 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>DropDown</title>
+
+    <style>
+        ul{
+            list-style-type: none;
+            display: flex;
+            background-color: gray;
+            padding: 20px;
+            margin: 0px;
+            position: relative;
+            
+
+        }
+
+        ul li{
+            margin-right: 20px;
+        }
+
+        ul li a{
+        
+            color: black;
+            text-decoration: none;
+            padding: 10px;
+        }
+
+        ul li a:hover{
+            background-color: beige;
+        }
+
+        .dropdown{
+            display: none;
+            background-color: bisque;
+            padding: 10px;
+            position: absolute;
+            min-width: 0px;
+            top: 51px;
+            left: 320px;
+            box-shadow: 0px 10px 16px 0px rgba(0, 0, 0, 0.434);
+        }
+
+       .dropdown a{
+            display: block;
+            text-decoration: none;
+            font-size: 20px;
+        }
+
+        .dropbtn:hover  .dropdown{
+            display: block;
+        }
+
+    </style>
+
 </head>
 <body>
-    <h1>Hello Git!</h1>
+    <ul>
+        <li><a href="">HOME</a></li>
+        <li><a href="">ABOUT</a></li>
+        <li><a href="">CONTENT</a></li>
+        <li class="dropbtn"><a href="">DROPDOWN</a>
+            <div class="dropdown">
+                <a href="">MESSI</a>
+                <a href="">Mbappe</a>
+                <a href="">Ronaldo</a>
+            </div>
+        </li>
+
+        
+    </ul>
+
+    <a href=""></a>
 </body>
 </html>
